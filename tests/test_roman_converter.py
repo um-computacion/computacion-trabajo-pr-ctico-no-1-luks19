@@ -1,5 +1,7 @@
 import unittest
 from src.roman_converter import decimal_to_roman
+
+
 class TestRomanConverter(unittest.TestCase):
 
     def test_conversion_simple(self):
@@ -23,10 +25,10 @@ class TestRomanConverter(unittest.TestCase):
         self.assertEqual(decimal_to_roman(3999), 'MMMCMXCIX')
 
     def test_complex_numbers(self):
-        self.assertEqual(decimal_to_roman(1234), 'MCMXCIX')
-        self.assertEqual(decimal_to_roman(7651), 'MMCCCXLV')
-        self.assertEqual(decimal_to_roman(7653), 'MMMDXX')
-        self.assertEqual(decimal_to_roman(764), 'DCCCLXXXVIII')
+        self.assertEqual(decimal_to_roman(1234), 'MCCXXXIV')
+        self.assertEqual(decimal_to_roman(2555), 'MMDLV')
+        self.assertEqual(decimal_to_roman(1712), 'MDCCXII')
+        self.assertEqual(decimal_to_roman(764), 'DCCLXIV')
              
 if __name__ == '__main__':
     unittest.main()
